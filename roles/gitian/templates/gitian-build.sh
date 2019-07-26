@@ -24,7 +24,7 @@ commitFiles=true
 gitian_builder_repo_path=${HOME}/gitian-builder
 gitian_sigs_repo_path=${HOME}/gitian.sigs
 
-zcash_repo_dir_path=${HOME}/zcash
+zcash_repo_dir_path=${HOME}/zclassic
 gitian_descriptor_path=${zcash_repo_dir_path}/contrib/gitian-descriptors/gitian-linux.yml
 
 zcash_binaries_dir_path=${HOME}/zcash-binaries
@@ -222,7 +222,7 @@ then
             suite_binaries_dir_path=${zcash_binaries_dir_path}/${VERSION}/${suite}
             mkdir ${suite_binaries_dir_path}
 
-            mv ${build_dir_path}/out/zcash-*.tar.gz ${build_dir_path}/out/src/zcash-*.tar.gz ${suite_binaries_dir_path}
+            mv ${build_dir_path}/out/zclassic-*.tar.gz ${build_dir_path}/out/src/zclassic-*.tar.gz ${suite_binaries_dir_path}
 
             popd  # pushd ${gitian_builder_repo_path}
 
